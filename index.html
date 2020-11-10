@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+   
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+
+  </head>
+  <body>
+    <div  id="app" >
+        
+      <v-app >
+          <v-container class="justify-center align-content-start" >
+          <div> <p class=" font-weight-black "> Digite a url: </p> </div>
+            <v-col cols="4" class="">
+            <v-text-field  id="url" class="white--text"></v-text-field>
+            </v-col>
+            <v-col class="d-flex flex-row " cols="6"> 
+            <v-row class=" justify-start " no-gutters >    
+            <v-btn
+            class="purple darken-4 white--text"
+            elevation="3"
+            medium
+            outlined
+            raised
+            rounded
+            text
+            width="250"
+            onclick="takeaShot()"> Capturar tela </v-btn>
+        </v-row>  
+            <v-row class="  justify-start" no-gutters >
+            <v-btn
+            id="btn-baixar"
+            class="purple darken-4 white--text"
+            elevation="3"
+            medium
+            outlined
+            raised
+            rounded
+            text
+            width="250">  Baixar </v-btn>
+             </v-row>
+             </v-col>
+             <div class="tempo"> 
+              <span class="msg"></span> <br>
+              <span class="contador"></span>
+            </div>    
+</v-container>
+
+    </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
